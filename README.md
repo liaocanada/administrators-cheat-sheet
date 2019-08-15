@@ -1,4 +1,4 @@
-# Administrator-s-Cookbook
+# Administrator's Cookbook
 A collection of useful commands, snippets, and reference links used in the average day of an administrator.
 
 Please note these are only based on my personal experiences. 
@@ -7,3 +7,20 @@ These commands are intended to be used as reference material, for the purposes o
 Please also feel free to check out my Developer's Cookbook.
 
 ## Table of Contents
+1. [Linux + Mac](#linux-mac)
+2. [Windows](#windows)
+3. [Docker](#docker)
+4. [AWS](#aws)
+5. [Google Cloud](#gcloud)
+
+## <a name="linux-mac"></a> Linux + Mac
+
+## Windows
+
+## Docker
+
+## AWS
+
+## <a name="gcloud"></a>Google Cloud
+
+
