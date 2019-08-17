@@ -66,13 +66,13 @@ Please also feel free to check out my [Developer's Cookbook](https://github.com/
 | Mongo-Express     | 8081          |
 
 ### Protocols
-| Name              | Port Number   |
-|-------------------|---------------|
-| HTTP              | 80            |
-| HTTPS             | 443           |
-| SSH               | 22            |
-| RDP               | 3389          |
-| SMTP              | 25            |
+| Name  | Port Number | Used To                            |
+|-------|-------------|------------------------------------|
+| HTTP  | 80          | Access the internet                |
+| HTTPS | 443         | Access the internet securely       |
+| SSH   | 22          | Connect to a Linux/Mac VM instance |
+| RDP   | 3389        | Connect to a Windows instance      |
+| SMTP  | 25          | Email transmission                 |
 
 ### Databases
 | Name              | Port Number   |
