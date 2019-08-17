@@ -13,6 +13,10 @@ Please also feel free to check out my [Developer's Cookbook](https://github.com/
 4. [Docker + Kubernetes](#docker-kubernetes)
 5. [MySQL](#mysql)
 6. [Default Port Numbers](#ports)
+    * [Servers + Applications](#servers-and-applications)
+    * [Protocols](#protocols)
+    * [Databases](#databases)
+    * [Port Ranges](#port-ranges)
 
 ## <a name="linux-mac"></a> Linux + Mac
 | Action                                                                   | Command                                                                                                                                                                                                                                                                 | Description |
@@ -49,7 +53,7 @@ Please also feel free to check out my [Developer's Cookbook](https://github.com/
 | Display contents of a table | Connect to MySQL CLI<br/> `show databases;`<br/> `use <database-name>;`<br/> `show tables;`<br/> `select * from <table-name>;` |             |
 
 ## <a name="ports"></a>Default Port Numbers
-### Servers/Applications
+### Servers and Applications
 | Name              | Port Number   |
 |-------------------|---------------|
 | Apache Tomcat     | 8080          |
@@ -77,7 +81,7 @@ Please also feel free to check out my [Developer's Cookbook](https://github.com/
 | PostgreSQL        | 5432          |
 | MongoDB           | 27017         |
 
-### Other
+### Port Ranges
 | Name              | Port Range    |
 |-------------------|---------------|
 | Available ports   | 1024 to 49151 |
