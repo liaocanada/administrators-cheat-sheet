@@ -36,6 +36,10 @@ Please also feel free to check out my [Developer's Cookbook](https://github.com/
 | Mount a volume     | Attach the volume via EC2 console or equivalent<br/>`lsblk`<br/> `sudo file -s <volume-name>`<br/> `sudo mkfs -t ext4 <volume-name>`<br/> `sudo file -s <volume-name>`<br/> `sudo mount <filesystem-name> <destination-directory>`<br/> | `<volume-name>` for EC2 might look like `xvdb` or `sdb`<br/> `<filesystem-name>` might look like `xvdb1` or `sdb1`  |
 
 ## AWS
+| Action                                    | Command                                                                | Description                                                                                  |
+|-------------------------------------------|------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
+| Install AWS CLI                           | https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html |                                                                                              |
+| Upload a folder  (e.g. node webapp) to S3 | `npm build`<br/> `aws s3 sync build/ s3://<s3-bucket-name>`            | The second command may be set  as an npm script, so that you can  call `npm deploy` instead. |
 
 ## <a name="gcloud"></a>Google Cloud
 
