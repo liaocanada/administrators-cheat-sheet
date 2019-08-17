@@ -9,10 +9,11 @@ Please also feel free to check out my [Developer's Cookbook](https://github.com/
 ## Table of Contents
 1. [Linux + Mac](#linux-mac)
 2. [Windows](#windows)
-3. [Docker](#docker)
+3. [VMs](#vms)
 4. [AWS](#aws)
 5. [Google Cloud](#gcloud)
-6. [Default Port Numbers](#ports)
+6. [Docker + Kubernetes](#docker-kubernetes)
+7. [Default Port Numbers](#ports)
 
 ## <a name="linux-mac"></a> Linux + Mac
 | Action                                                                   | Command                                                                                                                                                                                                                                                                 | Description |
@@ -26,11 +27,18 @@ Please also feel free to check out my [Developer's Cookbook](https://github.com/
 
 ## Windows
 
-## Docker
+## VMs
+| Action             | Command                                                                                                                                                                                                                                 | Description                                                                                                         |
+|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
+| SSH to an instance | `ssh -i <private-key-location> <user>@<public-dns-or-ip>`<br/> `ssh -i my-private-key.pem ec2-user@ec2-12-123-23-234.compute-1.amazonaws.com`                                                                                           | `<user>` for EC2:<br/> Ubuntu = `ubuntu`<br/> Centos = `centos`<br/> Debian = `admin`<br/> Other Linux = `ec2-user` |
+| Copy files         | Zip up source folder<br/> `scp -i <private-key-location> <source>.zip <user>@<public-dns-or-ip>:<destination-directory>`<br/> Connect to instance via ssh<br/> `cd <destination-directory>`<br/> `unzip <source>.zip`                   |                                                                                                                     |
+| Mount a volume     | Attach the volume via EC2 console or equivalent<br/>`lsblk`<br/> `sudo file -s <volume-name>`<br/> `sudo mkfs -t ext4 <volume-name>`<br/> `sudo file -s <volume-name>`<br/> `sudo mount <filesystem-name> <destination-directory>`<br/> | `<volume-name>` for EC2 might look like `xvdb` or `sdb`<br/> `<filesystem-name>` might look like `xvdb1` or `sdb1`  |
 
 ## AWS
 
 ## <a name="gcloud"></a>Google Cloud
+
+## <a name="docker-kubernetes"></a> Docker + Kubernetes
 
 ## <a name="ports"></a>Default Port Numbers
 | Name              | Port Number   |
