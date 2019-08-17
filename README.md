@@ -7,14 +7,12 @@ These commands are intended to be used as reference material, for the purposes o
 Please also feel free to check out my [Developer's Cookbook](https://github.com/liaocanada/Developers-Cookbook).
 
 ## Table of Contents
-1. [Linux + Mac](#linux-mac)
-2. [Windows](#windows)
-3. [VMs](#vms)
-4. [AWS](#aws)
-5. [Google Cloud](#gcloud)
-6. [Docker + Kubernetes](#docker-kubernetes)
-7. [MySQL](#mysql)
-8. [Default Port Numbers](#ports)
+1. [Linux (and Mac)](#linux-mac)
+2. [VMs](#vms)
+3. [AWS](#aws)
+4. [Docker + Kubernetes](#docker-kubernetes)
+5. [MySQL](#mysql)
+6. [Default Port Numbers](#ports)
 
 ## <a name="linux-mac"></a> Linux + Mac
 | Action                                                                   | Command                                                                                                                                                                                                                                                                 | Description |
@@ -25,8 +23,6 @@ Please also feel free to check out my [Developer's Cookbook](https://github.com/
 | Apache web server reverse  proxy config                                  |                                                                                                                                                                                                                                                                         |             |
 | Nginx reverse proxy config                                               |                                                                                                                                                                                                                                                                         |             |
 | URL Redirect using  iptables  (using reverse proxy  is more recommended) | `sudo iptables -t nat -I PREROUTING -p tcp --dport 80 -j REDIRECT --to-port <redirect-port>`                                                                                                                                                                            |             |
-
-## Windows
 
 ## VMs
 | Action             | Command                                                                                                                                                                                                                                 | Description                                                                                                         |
@@ -41,9 +37,8 @@ Please also feel free to check out my [Developer's Cookbook](https://github.com/
 | Install AWS CLI                           | https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html |                                                                                              |
 | Upload a folder  (e.g. node webapp) to S3 | `npm build`<br/> `aws s3 sync build/ s3://<s3-bucket-name>`            | The second command may be set  as an npm script, so that you can  call `npm deploy` instead. |
 
-## <a name="gcloud"></a>Google Cloud
-
 ## <a name="docker-kubernetes"></a> Docker + Kubernetes
+
 
 ## MySQL
 | Action                      | Command                                                                                                                        | Description |
@@ -54,6 +49,7 @@ Please also feel free to check out my [Developer's Cookbook](https://github.com/
 | Display contents of a table | Connect to MySQL CLI<br/> `show databases;`<br/> `use <database-name>;`<br/> `show tables;`<br/> `select * from <table-name>;` |             |
 
 ## <a name="ports"></a>Default Port Numbers
+### Servers/Applications
 | Name              | Port Number   |
 |-------------------|---------------|
 | Apache Tomcat     | 8080          |
@@ -63,5 +59,26 @@ Please also feel free to check out my [Developer's Cookbook](https://github.com/
 | Apache Web Server | 80            |
 | Nginx             | 80            |
 | RabbitMQ          | 15672         |
+| Mongo-Express     | 8081          |
+
+### Protocols
+| Name              | Port Number   |
+|-------------------|---------------|
+| HTTP              | 80            |
+| HTTPS             | 443           |
+| SSH               | 22            |
+| RDP               | 3389          |
+| SMTP              | 25            |
+
+### Databases
+| Name              | Port Number   |
+|-------------------|---------------|
+| MySQL             | 3306          |
+| PostgreSQL        | 5432          |
+| MongoDB           | 27017         |
+
+### Other
+| Name              | Port Range    |
+|-------------------|---------------|
 | Available ports   | 1024 to 49151 |
 | Possible ports    | 0 to 65535    |
