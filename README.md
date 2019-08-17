@@ -13,7 +13,8 @@ Please also feel free to check out my [Developer's Cookbook](https://github.com/
 4. [AWS](#aws)
 5. [Google Cloud](#gcloud)
 6. [Docker + Kubernetes](#docker-kubernetes)
-7. [Default Port Numbers](#ports)
+7. [MySQL](#mysql)
+8. [Default Port Numbers](#ports)
 
 ## <a name="linux-mac"></a> Linux + Mac
 | Action                                                                   | Command                                                                                                                                                                                                                                                                 | Description |
@@ -39,6 +40,14 @@ Please also feel free to check out my [Developer's Cookbook](https://github.com/
 ## <a name="gcloud"></a>Google Cloud
 
 ## <a name="docker-kubernetes"></a> Docker + Kubernetes
+
+## MySQL
+| Action                      | Command                                                                                                                        | Description |
+|-----------------------------|--------------------------------------------------------------------------------------------------------------------------------|-------------|
+| Connect to MySQL CLI        | `mysql`<br/> `mysql --user=<user> -p`                                                                                          |             |
+| Export a database           | `mysqldump --user=<user> -p <DB-to-export> > <destination-file>.sql`                                                           |             |
+| Import a database           | `mysql --user=<user> -p <DB-to-import> < <source-file>.sql`                                                                    |             |
+| Display contents of a table | Connect to MySQL CLI<br/> `show databases;`<br/> `use <database-name>;`<br/> `show tables;`<br/> `select * from <table-name>;` |             |
 
 ## <a name="ports"></a>Default Port Numbers
 | Name              | Port Number   |
